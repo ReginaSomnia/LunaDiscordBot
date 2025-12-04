@@ -1,0 +1,11 @@
+{
+	"welcome": {
+		"message": "Welcome to the server, {user}!"
+	},
+	"boost": {
+		"message": "Thank you {user} for boosting the server!"
+	},
+	"errors": {
+		"generic": "Something went wrong!"
+	}
+}
