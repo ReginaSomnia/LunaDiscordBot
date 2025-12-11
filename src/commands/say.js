@@ -26,6 +26,13 @@ export default {
 		)
 		.setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
 	async execute(interaction) {
+		if (!interaction.client.config.enableSayCommand) {
+			return interaction.reply({
+				content: "This command is currently disabled.",
+				ephemeral: true,
+			});
+		}
+
 		let title = interaction.options.getString("title");
 		let description = interaction.options.getString("description");
 		const image = interaction.options.getString("image");
